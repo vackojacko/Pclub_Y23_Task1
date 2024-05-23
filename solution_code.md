@@ -4,6 +4,11 @@
 using namespace std;
 
 // here we have a func. which finds all proper divisors of N
+
+
+
+
+
 vector<long long> divs(long long N) {
     vector<long long> divisors;
     for (long long i=1; i*i <= N; ++i) {
@@ -16,7 +21,9 @@ vector<long long> divs(long long N) {
 }
 
 
+
 string findthewinner(long long N, long long T, unordered_map<long long, string>& memo) {
+   
     if (memo.count(N)) {
         return memo[N];
     }
@@ -39,8 +46,14 @@ string findthewinner(long long N, long long T, unordered_map<long long, string>&
     return "Faye";
 }
 
-int main() {
+
+
+
+int main() 
+{
+   
     int t;
+   
     cin >> t;
 
     unordered_map<long long, string> memo;
